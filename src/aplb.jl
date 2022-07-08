@@ -5,17 +5,15 @@ function __init__()
   if  "LD_LIBRARY_PATH" in keys(ENV) && # check if <LD_LIBRARY_PATH> is set AND
     # check if <libarmpl_ilp64_mp.so> is present in <LD_LIBRARY_PATH>:
     isfile(joinpath(ENV["LD_LIBRARY_PATH"], "libarmpl_ilp64_mp.so"))
-    println("Thanks for using Julia bindings to Arm Performance Libraries (BLAS)
-    ")
+    println("Thanks for using Julia bindings to Arm Performance Libraries (BLAS).")
     # link <libarmpl_ilp64_mp.so> instead of default libblas.so; AND
     # clear out all previous mappings before setting new ones 
       # (change to false if layering of libraries is required); AND
     # verbose output:
-    println("LINKING => ", joinpath(ENV["LD_LIBRARY_PATH"], "libarmpl_ilp64_mp.so"))
+    println("Linking => ", joinpath(ENV["LD_LIBRARY_PATH"], "libarmpl_ilp64_mp.so"))
     BLAS.lbt_forward("libarmpl_ilp64_mp.so", clear=true, verbose=true)
     # print current BLAS configuration:
-    println("
-    BLAS CONFIGURATION => ", BLAS.get_config())
+    println("BLAS configuration => ", BLAS.get_config())
     # BLAS.set_num_threads() and BLAS.get_num_threads() are vendor-specific APIs
       # and in this case are not supported by libblastrampoline, however,
       # <libarmpl_ilp64_mp.so> sets number of maximum BLAS threads automaticly.
