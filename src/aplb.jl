@@ -18,17 +18,16 @@ function __init__()
       # and in this case are not supported by libblastrampoline, however,
       # <libarmpl_ilp64_mp.so> sets number of maximum BLAS threads automaticly.
   else
-      # isempty(joinpath(ENV["LD_LIBRARY_PATH"], "libarmpl_ilp64_mp.so"))
-      println("WARNING:  Basic requirements to use <armplblas> are not met.
-
-        Please check if:
-        - Arm Performance Libraries are present on the system
-          (for details about installation procedure please see:
-          https://developer.arm.com/downloads/-/arm-performance-libraries);
-        and / or if
-        - <LD_LIBRARY_PATH> environmental variable is set to
-          a directory containing <libarmpl_ilp64_mp.so>
-          i.e. LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 1.")
+    @error "
+    Basic requirements to use <ArmPLBLAS> are not met.
+    Please check if:
+    - Arm Performance Libraries are present on the system
+      (for details about installation procedure please see:
+      https://developer.arm.com/downloads/-/arm-performance-libraries);
+    and / or if
+    - <LD_LIBRARY_PATH> environmental variable is set to
+      a directory containing <libarmpl_ilp64_mp.so>
+      i.e. LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 1."
   end
 end
 

@@ -11,9 +11,7 @@
 
 
 
-@info "Check julia version"
-using InteractiveUtils
-  InteractiveUtils.versioninfo()
+
 
 @info "Check basic machine specs"
   @info "Sys.CPU_NAME" Sys.CPU_NAME
@@ -32,8 +30,7 @@ using InteractiveUtils
   @info "Sys.iswindows" Sys.iswindows()
   @info "Sys.isapple()" Sys.isapple()
   @info "Sys.SC_CLK_TCK" Sys.SC_CLK_TCK
-  @info "Sys.BINDIR" Sys.BINDIR
-  @info "Sys.STDLIB" Sys.STDLIB
+
 
 @info "Check topology"
 using Hwloc
@@ -41,12 +38,7 @@ using Hwloc
   println()
   @info "Detailed topology info" Hwloc.topology()
 
-@info "Check versions of packages"
-  @info "Pkg.status()" Pkg.status("BenchmarkTools")
-  @info "Pkg.status()" Pkg.status("Hwloc")
-  @info "Pkg.status()" Pkg.status("ThreadPinning")
-  @info "Pkg.status()" Pkg.status("STREAMBenchmark")
-  @info "Pkg.status()" Pkg.status("BandwidthBenchmark")
+
 
 
 println("#############################################")
