@@ -1,2 +1,2 @@
 # aplb.jl
-aplb.jl is released under the terms of the MIT "Expat" License.
+aplb.jl is released under the terms of the MIT "Expat" License. Details to follow.
