@@ -24,17 +24,19 @@ println("
 ###############################################
 # THREAD PINNING - threadinfo
 ###############################################")
-threadPinning.threadinfo(; blas=true, hints=true, color=true) 
+ThreadPinning.threadinfo(; blas=true, hints=true, color=true) 
 # to check as blas hints might not be supported with aplb
 
 println("
 #################################################
 # THREAD PINNING - Core 2 core latencies: results
+# ┌ Error: Need at least two Julia threads.
 #################################################")
 latencies = ThreadPinning.bench_core2core_latency()
 
 println("
 #################################################
 # THREAD PINNING - Core 2 core latencies: plot
+#################################################")
 print(UnicodePlots.heatmap(latencies, colorbar=true, colormap=:jet))
 @info "GC.gc()" GC.gc() # clear gc
