@@ -17,7 +17,7 @@ println("
 
 println("
 #############################################
-# BLAS BENCHMARKS - matrix 1000 x 10000
+# BLAS BENCHMARKS - matrix 1000 x 1000
 #############################################")
 A = rand(1000,1000); B = rand(1000,1000);
 # to do: print results
