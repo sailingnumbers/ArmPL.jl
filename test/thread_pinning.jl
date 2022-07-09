@@ -9,8 +9,11 @@ using ThreadPinning
 using DataFrames
 using UnicodePlots
 
-# to use default pinning do nothing, otherwise:
+# to use default pinning do nothing, 
+# just uncomment following line to print info
 # @info "Start benchmarks with default thread pinning"
+
+# otherwise:
 
 # uncomment following lines to set compact pinning
 @info "Start benchmarks with compact thread pinning"
@@ -24,15 +27,15 @@ println("
 ###############################################
 # THREAD PINNING - threadinfo
 ###############################################")
-ThreadPinning.threadinfo(; blas=true, hints=true, color=true) 
-# to check as blas hints might not be supported with aplb
+print(ThreadPinning.threadinfo(; blas=true, hints=true, color=true))
+# to check: as blas hints might not be supported ThreadPinning with aplb
 
 println("
 #################################################
 # THREAD PINNING - Core 2 core latencies: results
 # ┌ Error: Need at least two Julia threads.
 #################################################")
-latencies = ThreadPinning.bench_core2core_latency()
+print(latencies = ThreadPinning.bench_core2core_latency())
 
 println("
 #################################################
