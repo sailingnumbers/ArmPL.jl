@@ -7,8 +7,8 @@ println("
 
 @info "Sys.CPU_NAME" Sys.CPU_NAME
 @info "Sys.MACHINE" Sys.MACHINE
-println("Sys.CPU_THREADS ", Sys.CPU_THREADS)
-@info "Julia # of threads" Threads.nthreads()
+@info "Sys.CPU_THREADS " Sys.CPU_THREADS # same as in versions.jl
+@info "Julia # of threads" Threads.nthreads() # same as in versions.jl
 @info "Sys.total_memory" Sys.total_memory()
 @info "Sys.free_memory" Sys.free_memory()
 @info "Sys.loadavg" Sys.loadavg()

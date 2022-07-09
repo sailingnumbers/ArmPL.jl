@@ -8,6 +8,8 @@ using InteractiveUtils
   InteractiveUtils.versioninfo()
   @info "Sys.BINDIR" Sys.BINDIR
   @info "Sys.STDLIB" Sys.STDLIB
+  @info "Sys.CPU_THREADS " Sys.CPU_THREADS
+  @info "Julia # of threads" Threads.nthreads()
 
 println("
 #############################################
