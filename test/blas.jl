@@ -4,11 +4,11 @@ println("
 #############################################
 # SET BLAS
 #############################################")
-# (option) change blas (armplblas or OpenBLAS)
+# (option) change blas (aplb or OpenBLAS)
 
-# set ArmPLBLAS
+# set aplb
   @info "RESULTS: ARM PERFORMANCE LIBRARIES BLAS"
-  using ArmPLBLAS
+  using aplb
 
 # @info "RESULTS: OpenBLAS"
   # in case of a need, change to OpenBLAS (usually in /opt/julia/lib/julia/):

@@ -19,7 +19,7 @@ function __init__()
       # <libarmpl_ilp64_mp.so> sets number of maximum BLAS threads automaticly.
   else
     @error "
-    Basic requirements to use <ArmPLBLAS> are not met.
+    Basic requirements to use <aplb> are not met.
     Please check if:
     - Arm Performance Libraries are present on the system
       (for details about installation procedure please see:
