@@ -8,6 +8,7 @@
 #   Pkg.add("UnicodePlots")
 #   Pkg.add("STREAMBenchmark")
 #   Pkg.add(url="https://github.com/carstenbauer/BandwidthBenchmark.jl")
+#   Pkg.add("Crayons")
 
 include("versions.jl")
 include("machine.jl")
