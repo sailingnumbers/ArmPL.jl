@@ -1,6 +1,8 @@
-# blas.jl
+# armpl_blas.jl
 
-println(Crayon(background = (0, 145, 189)),"
+using Crayons
+
+println(Crayon(foreground = (0, 145, 189)),"
 #############################################
 # SET BLAS
 #############################################")

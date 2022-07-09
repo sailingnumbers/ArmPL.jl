@@ -45,6 +45,14 @@ version = "0.1.0"
 [[deps.Artifacts]]
 uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 
+[[deps.BLISBLAS]]
+deps = ["LinearAlgebra", "blis_jll"]
+git-tree-sha1 = "cf6064af6edc2224549d9993bc143e15fe12ae0e"
+repo-rev = "main"
+repo-url = "https://github.com/carstenbauer/BLISBLAS.jl"
+uuid = "6f275bd8-fec0-4d39-945b-7e95a765fa1e"
+version = "0.1.0"
+
 [[deps.BandwidthBenchmark]]
 deps = ["DataFrames", "PrettyTables", "Printf", "Requires", "Statistics"]
 git-tree-sha1 = "e471c411f52d5d6d29252fd101ada191bc535352"
@@ -346,6 +354,12 @@ deps = ["Dates", "Mmap", "Parsers", "Unicode"]
 git-tree-sha1 = "3c837543ddb02250ef42f4738347454f95079d4e"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.3"
+
+[[deps.LLVMOpenMP_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
+git-tree-sha1 = "ad927676766e6529a2d5152f12040620447c0c9b"
+uuid = "1d63c593-3942-5779-bab2-d838dc0a180e"
+version = "14.0.4+0"
 
 [[deps.LayoutPointers]]
 deps = ["ArrayInterface", "ArrayInterfaceOffsetArrays", "ArrayInterfaceStaticArrays", "LinearAlgebra", "ManualMemory", "SIMDTypes", "Static"]
@@ -697,6 +711,12 @@ version = "0.21.41"
 [[deps.Zlib_jll]]
 deps = ["Libdl"]
 uuid = "83775a58-1f1d-513f-b197-d71354ab007a"
+
+[[deps.blis_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "LLVMOpenMP_jll", "Libdl", "Pkg"]
+git-tree-sha1 = "11bff75f843943ff823164a5d4fed9eeca0ecec4"
+uuid = "6136c539-28a5-5bf0-87cc-b183200dce32"
+version = "0.9.0+1"
 
 [[deps.libblastrampoline_jll]]
 deps = ["Artifacts", "Libdl", "OpenBLAS_jll"]
