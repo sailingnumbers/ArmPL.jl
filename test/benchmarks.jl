@@ -22,8 +22,8 @@ println("
 A = rand(10,10); B = rand(10,10);
 # to do: print results
 benchmark = @benchmark $A * $B
-@show(benchmark )
-@show(benchmark = @benchmark $A * $B)
+#@show(benchmark )
+#@show(benchmark = @benchmark $A * $B)
 @info "clear GC" GC.gc()
 
 benchmarkable = @benchmarkable benchmark gcsample=false samples=100 seconds = 7200
@@ -33,9 +33,9 @@ benchmarkable = @benchmarkable benchmark gcsample=false samples=100 seconds = 72
     println()
 
     # println("N=$i")
-    @show btime
+    #@show btime
     display(btime)
-    dump(btime)
+    #dump(btime)
 
 println("
 #############################################
