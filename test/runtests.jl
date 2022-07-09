@@ -24,18 +24,21 @@
 
 include("versions.jl")
 include("machine.jl")
-include("thread_pinning.jl")
 
 include("armpl_blas.jl")
+include("thread_pinning.jl")
 include("benchmarks.jl")
 
 include("openblas_blas.jl")
+include("thread_pinning.jl")
 include("benchmarks.jl")
 
 include("blisblas_blas.jl")
+include("thread_pinning.jl")
 include("benchmarks.jl")
 
-# include("")
+include("summary.jl")
+
 # include("")
 # include("")
 # include("")

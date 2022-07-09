@@ -18,5 +18,11 @@ println(Crayon(foreground = (127, 0, 255)),"
   println("BLAS CONFIGURATION => ", BLAS.get_config())
   println("Current # of BLAS threads => ", BLAS.get_num_threads())
   # println("Set BLAS # of threads => ", BLAS.set_num_threads(1))
+
+# @info "BLISBLAS"
+#   using BLISBLAS
+#   println("BLAS CONFIGURATION => ", BLAS.get_config())
+#   println("Current # of BLAS threads => ", BLAS.get_num_threads())
+#   # println("Set BLAS # of threads => ", BLAS.set_num_threads(1))  
   
 println("")
