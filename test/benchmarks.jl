@@ -17,35 +17,12 @@ println("
 
 println("
 #############################################
-# BLAS BENCHMARKS - matrix 10 x 10
-#############################################")
-A = rand(10,10); B = rand(10,10);
-# to do: print results
-benchmark = @benchmark $A * $B
-#@show(benchmark )
-#@show(benchmark = @benchmark $A * $B)
-@info "clear GC" GC.gc()
-
-benchmarkable = @benchmarkable benchmark gcsample=false samples=100 seconds = 7200
-    # run(benchmarkable)
-    btime = run(benchmarkable)
-
-    println()
-
-    # println("N=$i")
-    #@show btime
-    display(btime)
-    #dump(btime)
-
-println("
-#############################################
 # BLAS BENCHMARKS - matrix 1000 x 10000
 #############################################")
 A = rand(1000,1000); B = rand(1000,1000);
 # to do: print results
-benchmark = @benchmark $A * $B
-@show(benchmark )
-@show(benchmark = @benchmark $A * $B)
+benchmark = @benchmark $A * $B;
+display(benchmark)
 @info "clear GC" GC.gc()
 
 println("
@@ -54,7 +31,8 @@ println("
 #############################################")
 C = rand(10000,10000); D = rand(10000,10000);
 # to do: print results
-@benchmark $C * $D
+benchmark = @benchmark $C * $D;
+display(benchmark)
 @info "clear GC" GC.gc()
 
 println("
@@ -65,7 +43,8 @@ n = [10^k for k in 1:6]
 x, y = [rand(ni) for ni in n], [rand(ni) for ni in n]
 α = sqrt(pi)
 # to do: print results
-@benchmark LinearAlgebra.BLAS.axpy!(α, x, y)
+benchmark = @benchmark LinearAlgebra.BLAS.axpy!(α, x, y);
+display(benchmark)
 # thx MF
 @info "clear GC" GC.gc()
 
