@@ -6,7 +6,7 @@ println("
 @info "Sys.CPU_NAME" Sys.CPU_NAME
 @info "Sys.MACHINE" Sys.MACHINE
 println("Sys.CPU_THREADS ", Sys.CPU_THREADS)
-@info "# of threads" Threads.nthreads()
+@info "Julia # of threads" Threads.nthreads()
 @info "Sys.total_memory" Sys.total_memory()
 @info "Sys.free_memory" Sys.free_memory()
 @info "Sys.loadavg" Sys.loadavg()
