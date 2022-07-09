@@ -17,6 +17,28 @@ println("
 
 println("
 #############################################
+# BLAS BENCHMARKS - matrix 10 x 10
+#############################################")
+A = rand(10,10); B = rand(10,10);
+# to do: print results
+benchmark = @benchmark $A * $B
+@show(benchmark )
+@show(benchmark = @benchmark $A * $B)
+@info "clear GC" GC.gc()
+
+benchmarkable = @benchmarkable benchmark gcsample=false samples=100 seconds = 7200
+    # run(benchmarkable)
+    btime = run(benchmarkable)
+
+    println()
+
+    # println("N=$i")
+    @show btime
+    display(btime)
+    dump(btime)
+
+println("
+#############################################
 # BLAS BENCHMARKS - matrix 1000 x 10000
 #############################################")
 A = rand(1000,1000); B = rand(1000,1000);
