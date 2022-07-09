@@ -35,7 +35,8 @@ println("
 # THREAD PINNING - Core 2 core latencies: results
 # TO DO: ┌ Error: Need at least two Julia threads.
 #################################################")
-@show(latencies = ThreadPinning.bench_core2core_latency())
+latencies = ThreadPinning.bench_core2core_latency()
+@show(latencies)
 
 println("
 #################################################

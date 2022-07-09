@@ -12,7 +12,7 @@ println("
 #############################################
 # BLAS BENCHMARKS - peakflops
 #############################################")
-print(peakflops())
+@info "pekflops() ", peakflops()
 @info "clear GC" GC.gc()
 
 println("
@@ -21,7 +21,10 @@ println("
 #############################################")
 A = rand(1000,1000); B = rand(1000,1000);
 # to do: print results
-@benchmark $A * $B @info "clear GC" GC.gc()
+benchmark = @benchmark $A * $B
+@show(benchmark )
+@show(benchmark = @benchmark $A * $B)
+@info "clear GC" GC.gc()
 
 println("
 #############################################
