@@ -7,10 +7,10 @@ println("
 # (option) change blas (aplb or OpenBLAS)
 
 # set aplb
-  @info "RESULTS: ARM PERFORMANCE LIBRARIES BLAS"
+  @info "ARM PERFORMANCE LIBRARIES BLAS"
   using aplb
 
-# @info "RESULTS: OpenBLAS"
+# @info "OpenBLAS"
   # in case of a need, change to OpenBLAS (usually in /opt/julia/lib/julia/):
   # BLAS.lbt_forward("libopenblas64_.0.3.13.so", clear=true, verbose=true)
   # println("BLAS CONFIGURATION => ", BLAS.get_config())
