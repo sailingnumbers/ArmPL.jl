@@ -1,4 +1,4 @@
-# thread pinning
+# thread_pinning.jl
 
 println("
 ###############################################
