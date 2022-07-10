@@ -47,7 +47,7 @@ julia> using ArmPL
 # Tests
 A suite of example tests for ArmPL.jl, OpenBlas, BLISBLAS is included [i.e. core to core latencies, matrix multiplication, axpy!, memory bandwidth]. To use:
   - clone the repository:
-    git clone https://github.com/JuliaArm/ArmPL.jl"
+    git clone https://github.com/JuliaArm/ArmPL.jl
   - change directory
     cd ArmPL/test
   - start tests
@@ -62,7 +62,7 @@ ArmPL.jl is released under the terms of the MIT "Expat" License.
 This account is a private GitHub account. Package naming tries to follow best Julia Language Community practices. All registered trademarks, copyrigths and intellectual property rights belong to their respected owners.
 
 # Contact
-juliaarm at proton dot me [Please use with caution. Major purposes: friends making, serious questions. Due to time constraints not all messages may be answered immediately. Please be advised that any potential questions explicitly related to the usage of this particular Julia package should be addressed by Julia Discourse chanell and any potential issuess by GitHub chanell.]
+juliaarm at proton dot me [Please use with caution. Major purposes: friends making, serious questions.] [Due to time constraints not all messages may be answered immediately. Please be advised that any potential questions explicitly related to the usage of this particular Julia package should be addressed by Julia Discourse chanell and any potential issuess by GitHub chanell.]
 
 # Special thanks
 OP, CB, CE, MG, MF, CG, JL, JH
