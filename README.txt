@@ -109,7 +109,7 @@
 # Legal disclaimers:
 
   This account is a private GitHub account. Package naming tries to follow
-  best Julia Language Community practices. All registered trademarks,
+  the best Julia Language Community practices. All registered trademarks,
   copyrights and intellectual property rights belong to their respected
   owners.
 
