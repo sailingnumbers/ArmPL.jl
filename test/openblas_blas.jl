@@ -6,11 +6,11 @@ println(Crayon(foreground = (127, 0, 255)),"
 #############################################
 # SET BLAS
 #############################################")
-# (option) change blas (aplb or OpenBLAS)
+# (option) change blas (ArmPL or OpenBLAS)
 
-# set aplb
+# set ArmPL
   # @info "ARM PERFORMANCE LIBRARIES BLAS"
-  # using aplb
+  # using ArmPL
 
 @info "OpenBLAS"
   # set BLAS to OpenBLAS (usually in /opt/julia/lib/julia/):

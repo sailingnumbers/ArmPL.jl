@@ -28,7 +28,7 @@ println("
 # THREAD PINNING - threadinfo
 ###############################################")
 print(ThreadPinning.threadinfo(; blas=true, hints=true, color=true))
-# to check: as blas hints might not be supported ThreadPinning with aplb
+# to check: as blas hints might not be supported ThreadPinning with ArmPL
 
 println("
 #################################################

@@ -1,4 +1,4 @@
-module aplb
+module ArmPL
 
 import LinearAlgebra.BLAS
 function __init__()
@@ -15,14 +15,11 @@ function __init__()
     println("BLAS configuration => ", BLAS.get_config())
     # BLAS.set_num_threads() and BLAS.get_num_threads() are vendor-specific APIs
     # and in this case are not supported by libblastrampoline;
-    # <libarmpl_ilp64_mp.so> sets number of BLAS threads to maximum automaticly,
-    # based on default values of <OMP_NUM_THREADS> environmental variable,
-    # this environmental variable can be controlled manualy and 
-    # desired number of BLAS threads can be provided i.e. at the time of julia start
-    # <OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t auto>.
+    # <libarmpl_ilp64_mp.so> sets number of BLAS threads based on <OMP_NUM_THREADS> 
+    # environmental variable.
   else
     @error "
-    Basic requirements to use <aplb> are not met.
+    Basic requirements to use <ArmPL> are not met.
     Please check if:
     - Arm Performance Libraries are present on the system
       (for details about installation procedure please see:
