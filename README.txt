@@ -33,7 +33,9 @@
 # Install:
 
     julia> import Pkg; Pkg.add(url="https://github.com/JuliaArm/ArmPL.jl")
+    
     or
+    
     ] add https://github.com/JuliaArm/ArmPL.jl
 
 
@@ -106,6 +108,7 @@
 
 
 # Licence:
+
   ArmPL is released under the terms of the MIT "Expat" License.
 
 
