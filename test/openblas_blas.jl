@@ -1,8 +1,6 @@
 # openblas_blas.jl
 
-using Crayons
-
-println(Crayon(foreground = (127, 0, 255)),"
+println(cray_fg_color(r, g, b),"
 #############################################
 # SET BLAS
 #############################################")

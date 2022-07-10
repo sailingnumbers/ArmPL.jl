@@ -88,7 +88,7 @@
     git clone https://github.com/JuliaArm/ArmPL.jl
 
   - change directory:
-    cd ArmPL/test
+    cd ArmPL.jl/test
   
   - start tests: 
     <OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib 

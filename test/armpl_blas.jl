@@ -1,8 +1,6 @@
 # armpl_blas.jl
 
-using Crayons
-
-println(Crayon(foreground = (0, 145, 189)),"
+println(cray_fg_color(r, g, b),"
 #############################################
 # SET BLAS
 #############################################")

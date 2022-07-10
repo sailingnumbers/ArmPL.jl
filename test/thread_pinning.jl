@@ -1,8 +1,8 @@
 # thread_pinning.jl
 
-println("
+println(cray_fg_color(r, g, b),"
 ###############################################
-# THREAD PINNING - only Unix systems supported
+# THREAD PINNING
 ###############################################")
 # (option) change thread pinning (default, compact and spread)
 using ThreadPinning
@@ -23,14 +23,16 @@ ThreadPinning.pinthreads(:compact)
 # @info "Start benchmarks with spread thread pinning"
 # ThreadPinning.pinthreads(:spread)
 
-println("
+println(cray_fg_color(r, g, b),"
 ###############################################
 # THREAD PINNING - threadinfo
 ###############################################")
 print(ThreadPinning.threadinfo(; blas=true, hints=true, color=true))
 # to check: as blas hints might not be supported ThreadPinning with ArmPL
 
-println("
+println()
+
+println(cray_fg_color(r, g, b),"
 #################################################
 # THREAD PINNING - Core 2 core latencies: results
 # TO DO: ┌ Error: Need at least two Julia threads.
@@ -38,7 +40,7 @@ println("
 latencies = ThreadPinning.bench_core2core_latency();
 display(latencies)
 
-println("
+println(cray_fg_color(r, g, b),"
 #################################################
 # THREAD PINNING - Core 2 core latencies: plot
 #################################################")

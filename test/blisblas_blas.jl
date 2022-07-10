@@ -1,8 +1,6 @@
 # blisblas_blas.jl
 
-using Crayons
-
-println(Crayon(foreground = (245, 255, 36)),"
+println(cray_fg_color(r, g, b),"
 #############################################
 # SET BLAS
 #############################################")
