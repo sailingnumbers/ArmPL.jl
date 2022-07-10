@@ -14,7 +14,6 @@
     supported.
 
 
-
 # Requirements:
 
     - Unix, 64 bit operating system;
@@ -29,7 +28,6 @@
       LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia.
 
 
-
 # Install:
 
     julia> import Pkg; Pkg.add(url="https://github.com/JuliaArm/ArmPL.jl")
@@ -39,11 +37,9 @@
     ] add https://github.com/JuliaArm/ArmPL.jl
 
 
-
 # Usage:
 
     julia> using ArmPL
-
 
 
 # Additional usage information:
@@ -81,7 +77,6 @@
     <OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 80>
 
 
-
 # Tests:
 
   A suite of example tests for ArmPL, OpenBlas, BLISBLAS is included i.e. 
@@ -106,11 +101,9 @@
   (Focal Fossa), Julia 1.7.3
 
 
-
 # Licence:
 
   ArmPL is released under the terms of the MIT "Expat" License.
-
 
 
 # Legal disclaimers:
@@ -119,7 +112,6 @@
   best Julia Language Community practices. All registered trademarks,
   copyrigths and intellectual property rights belong to their respected
   owners.
-
 
 
 # Contact:
@@ -134,8 +126,6 @@
   issuess by GitHub.
 
 
-
 # Special thanks:
 
   OP, CB, CE, MG, MF, CG, JL, JH
-
