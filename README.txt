@@ -80,7 +80,7 @@
 # Tests:
 
   A suite of example tests for ArmPL, OpenBlas, BLISBLAS is included i.e. 
-  core to core latencies, matrix multiplication, axpy!, memory bandwidth etc. 
+  core to core latencies, matrix multiplication, axpy!, memory bandwidth ... 
   
   To use:
 
