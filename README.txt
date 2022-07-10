@@ -45,6 +45,15 @@ julia> using ArmPL
     <OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 80
 
 # Tests
+A suite of example tests for ArmPL.jl, OpenBlas, BLISBLAS is included [i.e. core to core latencies, matrix multiplication, axpy!, memory bandwidth]. To use:
+  - clone the repository:
+    git clone https://github.com/JuliaArm/ArmPL.jl"
+  - change directory
+    cd ArmPL/test
+  - start tests
+    <OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t auto runtests.jl
+
+# Tested on Neoverse N1, Oracle Linux 8.5 / Ubuntu 20.04.4 LTS (Focal Fossa), Julia 1.7.3
 
 # Licence
 ArmPL.jl is released under the terms of the MIT "Expat" License.
