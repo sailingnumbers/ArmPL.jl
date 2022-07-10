@@ -5,7 +5,7 @@
     This package is using <libblastrampoline> to link <libarmpl.so> which is
     usually symlinked to <libarmpl_ilp64_mp.so>; _ilp64 means 64-bit Ints (i),
     longs (l) and pointers (p) and _mp implies the OpenMP threaded version.
-    After system installation of Arm Performance Libraries, usuall location of
+    After system installation of Arm Performance Libraries, usual location of
     <libarmpl_ilp64_mp.so> is i.e. </opt/arm/armpl_22.0.2_gcc-11.2/lib>.
 
     Please be advised that such components of Arm Performance Libraries as
@@ -44,12 +44,12 @@
 
 # Additional usage information:
 
-  - ArmPL (<libarmpl_ilp64_mp.so>) sets number of BLAS threads to maximum automaticly,
+  - ArmPL (<libarmpl_ilp64_mp.so>) sets number of BLAS threads to maximum automatically,
     based on default values of operating system <OMP_NUM_THREADS> environmental variable;
-    <OMP_NUM_THREADS> environmental variable can be controlled manualy and desired number 
+    <OMP_NUM_THREADS> environmental variable can be controlled manually and desired number 
     of BLAS threads can be provided i.e. at the time of Julia start;
 
-  - in case processed Julia code is parallel, restrrict ArmPL and Julia threads to 1 and 
+  - in case processed Julia code is parallel, restrict ArmPL and Julia threads to 1 and 
     add desired number of processes e.g. start julia with: 
     
     OMP_NUM_THREADS=1 LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -p 80 -t 1 
@@ -63,8 +63,8 @@
             end
 
   - in case of single threaded Julia code calling expensive BLAS operations,
-    restrrict Julia to 1 thread and let ArmPL handle maximum number of
-    BLAS threads automaticly i.e.
+    restrict Julia to 1 thread and let ArmPL handle maximum number of
+    BLAS threads automatically i.e.
 
     LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 1 
     
@@ -110,7 +110,7 @@
 
   This account is a private GitHub account. Package naming tries to follow
   best Julia Language Community practices. All registered trademarks,
-  copyrigths and intellectual property rights belong to their respected
+  copyrights and intellectual property rights belong to their respected
   owners.
 
 
@@ -123,7 +123,7 @@
 
   Please be advised that any potential questions explicitly related to the usage 
   of this Julia package should be addressed by Julia Discourse and any potential 
-  issuess by GitHub.
+  issues by GitHub.
 
 
 # Special thanks:
