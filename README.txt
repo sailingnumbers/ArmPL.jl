@@ -1,5 +1,7 @@
 [This is a very preliminary (testing and working) release.]
 
+
+
 # About:
 
     Julia bindings to Arm Performance Libraries (BLAS). 
@@ -62,7 +64,8 @@
     
     julia>  using Distributed
             @everywhere begin
-              using ArmPL <your code>
+              using ArmPL 
+              <your code>
             end
 
   - in case of single threaded Julia code calling expensive BLAS operations,
