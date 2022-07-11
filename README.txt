@@ -130,4 +130,4 @@ This is a very preliminary (testing and working) release.
 
 # Special thanks:
 
-  OP, CB, CE, MG, MF, CG, JL, JH
+OP, CB, CE, MG, MF, CG, JL, JH, KJ, DS
