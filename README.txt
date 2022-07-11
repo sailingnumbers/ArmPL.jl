@@ -1,4 +1,5 @@
-# This is a very preliminary (testing and working) release.
+# Release info:
+    This is a very preliminary (testing and working) release.
 
 
 # About:
@@ -8,6 +9,7 @@
     This package is using <libblastrampoline> to link <libarmpl.so> which is
     usually symlinked to <libarmpl_ilp64_mp.so>; _ilp64 means 64-bit Ints (i),
     longs (l) and pointers (p) and _mp implies the OpenMP threaded version.
+    
     After system installation of Arm Performance Libraries, usual location of
     <libarmpl_ilp64_mp.so> is i.e. </opt/arm/armpl_22.0.2_gcc-11.2/lib>.
 
