@@ -20,14 +20,14 @@
 
     - Unix, 64 bit operating system;
 
-    - Arm Performance Libraries present on the system,
-      (for details about installation procedure please see:
+    - Arm Performance Libraries present on the system.
+      (For details about installation procedure please see:
       https://developer.arm.com/downloads/-/arm-performance-libraries);
 
     - <LD_LIBRARY_PATH> environmental variable set 
       to a directory containing <libarmpl_ilp64_mp.so> i.e.
 
-      LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia.
+      <LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia>
 
 
 # Install:
@@ -46,11 +46,11 @@
 
 # Additional usage information:
 
-  - ArmPL (<libarmpl_ilp64_mp.so>) sets number of BLAS threads to maximum
+    ArmPL (<libarmpl_ilp64_mp.so>) sets number of BLAS threads to maximum
     automatically, based on default values of operating system <OMP_NUM_THREADS>
     environmental variable; <OMP_NUM_THREADS> environmental variable can be
     controlled manually and desired number of BLAS threads can be provided i.e.
-    at the time of Julia start;
+    at the time of Julia start:
 
   - in case processed Julia code is parallel, restrict ArmPL and Julia threads
     to 1 and add desired number of processes e.g. start julia with: 
@@ -69,7 +69,7 @@
     restrict Julia to 1 thread and let ArmPL handle maximum number of BLAS
     threads automatically i.e.
 
-    LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 1 
+    <LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t 1>
     
     or set it manually i.e. 
     
