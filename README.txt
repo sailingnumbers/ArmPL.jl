@@ -22,16 +22,16 @@
 
 # Requirements:
 
-    - Unix, 64 bit operating system;
+  - Unix, 64 bit operating system;
 
-    - Arm Performance Libraries present on the system.
-      (For details about installation procedure please see:
-      https://developer.arm.com/downloads/-/arm-performance-libraries);
+  - Arm Performance Libraries present on the system.
+    (For details about installation procedure please see:
+    https://developer.arm.com/downloads/-/arm-performance-libraries);
 
-    - <LD_LIBRARY_PATH> environmental variable set 
-      to a directory containing <libarmpl_ilp64_mp.so> i.e.
+  - <LD_LIBRARY_PATH> environmental variable set 
+    to a directory containing <libarmpl_ilp64_mp.so> i.e.
 
-      <LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia>
+    <LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia>
 
 
 # Install:
