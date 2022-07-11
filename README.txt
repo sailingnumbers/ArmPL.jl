@@ -1,5 +1,4 @@
-[This is a very preliminary (testing and working) release.]
-
+# This is a very preliminary (testing and working) release.
 
 
 # About:
