@@ -87,7 +87,7 @@ This is a very preliminary (testing and working) release.
   To use:
 
   - clone the repository:
-    git clone https://github.com/JuliaArm/ArmPL.jl
+    git clone https://github.com/JuliaArm/ArmPL.jl.git
 
   - change directory:
     cd ArmPL.jl/test
