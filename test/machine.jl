@@ -33,18 +33,18 @@ using Hwloc
 
 println()
 
-println(cray_fg_color(r, g, b),"
+println("
 #############################################
 # SET OF BANDWIDTHBENCHMARKS:
 #############################################")
 using BandwidthBenchmark
 
-println(cray_fg_color(r, g, b),"
+println("
 # BANDWIDTHBENCHMARK - memory bandwidth using streaming kernels")
 print(BandwidthBenchmark.bwbench(#= ; verbose=true =#))
 @info "clear GC", GC.gc();
 
-println(cray_fg_color(r, g, b),"
+println("
 # BANDWIDTHBENCHMARK - memory bandwidth - increasing number of threads")
 df = DataFrame(BandwidthBenchmark.bwscaling(#= ; verbose=true =#), :auto)
 print(UnicodePlots.lineplot(df[!,:x1], df[!,:x2], title = "Memory bandwidth (bwscaling) - (1:max_nthreads) [lineplot])", xlabel = "# of cores", ylabel = "MFlops/s", border=:dotted))
@@ -56,7 +56,7 @@ print(UnicodePlots.barplot(
         ))
 @info "clear GC", GC.gc();
 
-println(cray_fg_color(r, g, b),"
+println("
 # BANDWIDTHBENCHMARK - floating point performance - increasing number of threads
 # (triad kernel based scaling)")
 df = DataFrame(BandwidthBenchmark.flopsscaling(), :auto)
@@ -73,25 +73,25 @@ print(UnicodePlots.barplot(
         ))
 @info "clear GC", GC.gc();
 
-println(cray_fg_color(r, g, b),"
+println("
 #############################################
 # SET OF STREAMBenchmarks:
 #############################################")
 using BandwidthBenchmark
 
-println(cray_fg_color(r, g, b),"
+println("
 # STREAMBenchmark - maximal memory bandwidth (single and multithreaded)")
 using STREAMBenchmark
 @info "Results: Estimating achievable (maximal) memory bandwidth (single and multithreaded)"
 STREAMBenchmark.benchmark()
 
-println(cray_fg_color(r, g, b),"
+println("
 # STREAMBenchmark - maximal memory wrt the number of threads")
 y = STREAMBenchmark.scaling_benchmark()
 print(UnicodePlots.lineplot(1:length(y), y, title = "Bandwidth Scaling", xlabel = "# cores", ylabel = "MB/s", border = :dotted#= , canvas = AsciiCanvas =#))
 @info "GC.gc()" GC.gc() # clear gc
 
-println(cray_fg_color(r, g, b),"
+println("
 # STREAMBenchmark - vector lengths check
 # (default is four times the size of the outermost cache)")
 STREAMBenchmark.vector_length_dependence()
