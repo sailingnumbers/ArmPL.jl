@@ -95,16 +95,16 @@
   
   To use:
 
-  - clone the repository:
-    git clone https://github.com/JuliaArm/ArmPL.jl.git
+- clone the repository:
+  git clone https://github.com/JuliaArm/ArmPL.jl.git
 
-  - change directory:
-    cd ArmPL.jl/test
-  
-  - start tests: 
-    <OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 BLIS_NUM_THREADS=1
-    LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t auto
-    runtests.jl>
+- change directory:
+  cd ArmPL.jl/test
+
+- start tests: 
+  <OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 BLIS_NUM_THREADS=1
+  LD_LIBRARY_PATH=/opt/arm/armpl_22.0.2_gcc-11.2/lib julia -t auto
+  runtests.jl>
 
 
 # Testing environment:
