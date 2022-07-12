@@ -10,8 +10,13 @@
 #   Pkg.add(url="https://github.com/carstenbauer/BandwidthBenchmark.jl")
 #   Pkg.add("Crayons")
 
+using Pkg
+Pkg.activate(".")
 
 include("versions.jl")
+# using DataFrames
+
+# using UnicodePlots
 include("machine.jl")
 
 using Crayons

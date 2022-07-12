@@ -77,11 +77,10 @@ println("
 #############################################
 # SET OF STREAMBenchmarks:
 #############################################")
-using BandwidthBenchmark
+using STREAMBenchmark
 
 println("
 # STREAMBenchmark - maximal memory bandwidth (single and multithreaded)")
-using STREAMBenchmark
 @info "Results: Estimating achievable (maximal) memory bandwidth (single and multithreaded)"
 STREAMBenchmark.benchmark()
 
